@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: crimson;
 }
 
 .float-right {
@@ -18,6 +19,7 @@ header {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 100%;
   height: auto;
+  margin-bottom: 1px;
   background-image: url(../images/BC3.jpg);
   background-position: center;
   color: blue;
@@ -52,21 +54,25 @@ a {
 }
 
 p {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .hero-banner {
   text-align: center;
   background-image: url(../images/BC3.jpg);
   background-position: 75%;
-  height: 150px;
+  height: 100%;
   width: auto;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: blue;
   font-size: 60px;
 }
 
+h2 {
+  font-size: 40px;
+}
 #about {
   align-items: flex-start;
   margin-right: 20px;
@@ -82,5 +88,73 @@ p {
 img {
   border-radius: 4px;
   width: 250px;
+}
 
+.background-image {
+  background-position: center;
+  background-size: cover;
+}
+
+.Proj1 {
+  background-image: url(../images/BC5.jpg);
+}
+
+.Proj2 {
+  background-image: url(../images/BC2.jpg);
+}
+
+.proj3 {
+  background-image: url(../images/BC4.jpg);
+}
+
+.proj4 {
+  background-image: url(../images/02-portfolio-4.jpg);
+}
+
+.proj5 {
+  background-image: url(../images/office.jpg);
+}
+
+.flex {
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.flex-item {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: calc(50% - 1em);
+  margin: .5em;
+  min-height: 150px;
+}
+
+.flex-item:first-child {
+  min-height: 300px;
+  flex-basis: 100%;
+}
+
+.flex-item div {
+  background-color: silver;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item {
+    flex-basis: 100%;
+  }
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  margin-right: 20px;
+  font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 32px;
+  color: blue;
 }
