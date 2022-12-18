@@ -16,6 +16,8 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: row;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 100%;
   height: auto;
@@ -32,9 +34,11 @@ header h1 {
 
 
 nav {
+  display: flex;
+  flex-basis: 70%;
+  justify-content: flex-end;
   padding-top: 15px;
   margin-right: 20px;
-  float: right;
   font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 32px;
 }
@@ -95,11 +99,11 @@ img {
   background-size: cover;
 }
 
-.Proj1 {
+.proj1 {
   background-image: url(../images/BC5.jpg);
 }
 
-.Proj2 {
+.proj2 {
   background-image: url(../images/BC2.jpg);
 }
 
