@@ -7,7 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: crimson;
+  background-color: rgb(241, 232, 215);
 }
 
 .float-right {
@@ -21,7 +21,6 @@ header {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 100%;
   height: auto;
-  margin-bottom: 1px;
   background-image: url(../images/BC3.jpg);
   background-position: center;
   color: blue;
@@ -37,7 +36,7 @@ nav {
   display: flex;
   flex-basis: 70%;
   justify-content: flex-end;
-  padding-top: 15px;
+  padding-top: 5px;
   margin-right: 20px;
   font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 32px;
@@ -77,10 +76,9 @@ p {
 h2 {
   font-size: 40px;
 }
+
 #about {
   align-items: flex-start;
-  margin-right: 20px;
-  padding: 20px;
   clear: both;
   float: right;
   width: 100%;
@@ -88,6 +86,11 @@ h2 {
   background-image: url(../images/BC1.jpg);
   color: blue;
 }
+
+#work {
+  color: blue;
+}
+
 
 img {
   border-radius: 4px;
@@ -144,21 +147,24 @@ flex-wrap: wrap;
   padding: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .flex-item {
-    flex-basis: 100%;
-  }
-  .flex-item:first-child {
-    min-height: 150px;
-  }
-}
-
 .contact {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
   padding-top: 15px;
   margin-right: 20px;
   font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 32px;
   color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item {
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
 }
