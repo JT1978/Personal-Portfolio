@@ -62,7 +62,6 @@ p {
 
 .hero-banner {
   background-image: url(../images/BC1.jpg);
-  background-position: center;
   height: 100%;
   width: auto;
   display: flex;
@@ -90,6 +89,7 @@ h2 {
 
 #work {
   color: blue;
+  display: inline;
 }
 
 
