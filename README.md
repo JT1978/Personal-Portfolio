@@ -24,10 +24,10 @@ When the page is resized or viewed on various screens and devices then the layou
 ## Screenshots
 
 Website deployed in desktop use
-![website live](images\Website.png)
+![website live](./images/Website.png)
 
 Website as indended for mobile use 
-![website live](images\Mobile.png)
+![website live](./images/Mobile.png)
 
 Link below to the deployed website and also link to github repo
 
